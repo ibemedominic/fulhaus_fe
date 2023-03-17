@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  height : 100%
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App #wrapper
+{
+  height : 90%;
+}
+
+#page-content-wrapper
+{
+  height : 100%;
+  overflow-y: auto;
+  direction: ltr;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+main.product {
+  padding: 2rem;
+}
+
+.product > h1 {
+  font-size: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-bottom: 1rem;
+  color: #333333;
+  font-weight: 100;
+}
+
+.product > .product__list {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 400px);
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+.product > .product__list > div.selected {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.product > .product__list > div > img {
+  height : 60%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product > .product__list > li > div.card {
+  height: 100%;
+  width : 100%;
+}
+
+#sidebar-wrapper {
+  background-color: #fdfdf7;
+}
+
+#sidebar-wrapper .side-wrapper > div.container > div.row {
+  background-color: #d5d5d4;
+}
+
+#sidebar-wrapper .side-wrapper > div.container > div.row > div.card 
+{
+  margin-bottom : 1rem;
+}
+
+#sidebar-wrapper .side-wrapper
+{
+  height : 70%;
+  overflow-y: auto;
+  direction: ltr;
+  background-color: #fdfdf7;
+}
+
+div.row.responsive > div.card
+{
+  padding : 20px;
+}
+.checked {
+  color: orange;
+}
